@@ -184,7 +184,7 @@ namespace core{
 					return;
 				}
 
-				if(!ImGui_ImplOpenGL3_Init("#version 460")){
+				if(!ImGui_ImplOpenGL3_Init("#version 330")){
 					status = false;
 					reason = "[sdl_gl_imgui_ctx_manager]ImGui_ImplOpenGL3_Init";
 					return;
