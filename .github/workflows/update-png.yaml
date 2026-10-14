@@ -1,0 +1,12 @@
+name: update-png
+
+on:
+  workflow_dispatch:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
