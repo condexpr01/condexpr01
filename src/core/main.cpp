@@ -4,6 +4,7 @@
 void app(int argc, char **argv){
 	if (core::is_offscreen){
 		SDL_SetHint(SDL_HINT_VIDEO_DRIVER,"offscreen");
+		SDL_SetHint(SDL_HINT_AUDIO_DRIVER,"dummy");
 	}
 
 	core::sdl_ctx_manager scm{};
