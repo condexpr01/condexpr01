@@ -1,5 +1,5 @@
 # debug
-if(TRUE)
+if(FALSE)
 	set(CMAKE_CXX_COMPILER clang++)
 	set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 	set(CMAKE_BUILD_TYPE Debug)
@@ -95,9 +95,9 @@ endif()
 ##########clone################
 find_program(GIT_EXECUTABLE git git.cmd)
 
-set(SDL_REPO "https://github.com/libsdl-org/SDL.git")
+#set(SDL_REPO "https://github.com/libsdl-org/SDL.git")
 #set(SDL_REPO "git@github.com:libsdl-org/SDL.git")
-#set(SDL_REPO "file:////home/condexpr01/Desktop/clonerepos/SDL/.git")
+set(SDL_REPO "file:////home/condexpr01/Desktop/clonerepos/SDL/.git")
 
 set(GLM_REPO "https://github.com/g-truc/glm.git")
 #set(GLM_REPO "git@github.com:g-truc/glm.git")
@@ -110,7 +110,7 @@ set(GLM_CLONE_DIR "${CMAKE_SOURCE_DIR}/clone/glm")
 ################
 #   SDL3       #
 ################
-find_package(SDL3)
+#find_package(SDL3)
 if(NOT SDL3_FOUND AND GIT_EXECUTABLE)
 
 	if(NOT EXISTS "${SDL_CLONE_DIR}/.git")
