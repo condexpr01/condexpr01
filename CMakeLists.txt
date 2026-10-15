@@ -95,9 +95,9 @@ endif()
 ##########clone################
 find_program(GIT_EXECUTABLE git git.cmd)
 
-#set(SDL_REPO "https://github.com/libsdl-org/SDL.git")
+set(SDL_REPO "https://github.com/libsdl-org/SDL.git")
 #set(SDL_REPO "git@github.com:libsdl-org/SDL.git")
-set(SDL_REPO "file:////home/condexpr01/Desktop/clonerepos/SDL/.git")
+#set(SDL_REPO "file:////home/condexpr01/Desktop/clonerepos/SDL/.git")
 
 set(GLM_REPO "https://github.com/g-truc/glm.git")
 #set(GLM_REPO "git@github.com:g-truc/glm.git")
