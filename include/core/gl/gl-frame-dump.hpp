@@ -17,7 +17,9 @@ namespace core{
 		glReadPixels(0,0,w,h,GL_RGBA,GL_UNSIGNED_BYTE,pixels.data());
 
 		stbi_flip_vertically_on_write(1);
-		if(stbi_write_png(path.c_str(),w,h,4,pixels.data(),w*4) == 0){
+		if(stbi_write_png(reinterpret_cast<const char*>(path.u8string().c_str()),
+			w,h,4,pixels.data(),w*4) == 0){
+
 			Log("[frame_dump_png]stbi_write_png failed");//just log
 		}
 	}
