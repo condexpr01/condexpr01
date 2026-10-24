@@ -110,7 +110,7 @@ set(GLM_CLONE_DIR "${CMAKE_SOURCE_DIR}/clone/glm")
 ################
 #   SDL3       #
 ################
-#find_package(SDL3)
+find_package(SDL3)
 if(NOT SDL3_FOUND AND GIT_EXECUTABLE)
 
 	if(NOT EXISTS "${SDL_CLONE_DIR}/.git")
