@@ -761,8 +761,8 @@ void profile_info(core::sdl_event_ctx &ctx, ImVec2 size, ImVec4 hl_col_positive,
 
 		auto dead_tp = std::chrono::sys_days{std::chrono::year_month_day{
 			std::chrono::year(2026),
-				std::chrono::month(11),
-				std::chrono::day(11),
+				std::chrono::month(12),
+				std::chrono::day(9),
 			}}
 			+ std::chrono::hours{-8}//CST
 			+ std::chrono::minutes{0}
